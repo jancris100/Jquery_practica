@@ -1,0 +1,313 @@
+@font-face {
+    font-family: customFont;
+    src: url(fonts/FjallaOne-Regular.ttf);
+    
+}
+
+@import url(https://i.fonts2u.com/we/mp1_websymbols-regular_1.avif);
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+body {
+    background-image: url(img/paven.png);
+}
+
+.header {
+    min-width: 1024px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+
+
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header .logotipo {
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+.header .logotipo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 20px;
+    font-family: customFont;
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+    margin-top: 10px;
+
+}
+
+header a {
+    color: #71B053;
+}
+
+header a:hover {
+    color: gray;
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+.menu ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1130px;
+}
+
+.menu>ul>li {
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+}
+
+.menu>ul>li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.menu ul li:first-child {
+    border-left: 1px solid gray;
+}
+
+.menu>ul>li a:hover {
+    background-color: rgb(42, 244, 42);
+    color: gray;
+    transition: 500ms;
+
+}
+
+
+.menu>ul>li>ul {
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    color: white;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0px 2px 2px;
+
+}
+
+ul>li:hover>ul {
+    display: block;
+
+}
+
+.content {
+    width: 1250px;
+    min-height: 1110px;
+    margin: 0px auto;
+}
+
+aside {
+    width: 200px;
+    height: 980px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+
+}
+
+.content #aside2{
+    clear: both;
+    float: left;
+    height: 200px;
+}
+
+.content #aside2 p{
+    margin: 10px;
+}
+
+.content #aside2 a{
+    color: #62A523;
+}
+
+.widgets {
+    padding: 10px;
+    border-bottom: 2px dashed black;
+
+}
+
+
+.widgets h2 {
+    font-size: 20px;
+    background-color: #F2F3F2;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.widgets form {
+    text-align: center;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.widgets input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.widgets button {
+    background-color: #62A523;
+    color: white;
+    padding: 5px;
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #62A523;
+    transition: 500ms;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.widgets button:hover {
+    background-color: rgb(42, 244, 42);
+}
+
+.widgets a {
+
+    text-decoration: none;
+    color: #589650;
+
+
+}
+
+.widgets li {
+    list-style: square;
+    float: left;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.widgets a:first-child {
+    padding-top: 10px;
+}
+
+
+
+#login2 h2 {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#login3 h2 {
+    color: #A32F1E;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content_cajas {
+    padding-top: 50px;
+    
+
+}
+
+.cajas {
+    margin-left: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flow-root;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.cajas h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: customFont;
+    text-shadow: 0px 0px 1px black;
+    letter-spacing: 5px;
+    border-bottom: #333333 dashed;
+}
+
+.content_cajas #caja1,#caja2,#caja3{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px black;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+
+.cajas ul li{
+    color: #528B1B;
+
+}
+
+.cajas ul li p{
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.cajas ul li p span{
+    color: #71B053;
+}
+.cajas ul li:first-child{
+    margin-top: 20px;
+}
+
+.imgscotch1,.imgscotch2{
+    position: absolute;
+    margin-top: -15px;
+    z-index: 0;
+}
+
+.imgscotch2{
+    margin-left: 800px;
+}
+
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #333333;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}

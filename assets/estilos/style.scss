@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=My+Soul&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+font-face {
+    font-family: DS-DIGI;
+    src: url("../font/ds_digital/DS-DIGI.TTF");
+    font-weight: bold;
+    }  
+
+
+html {
+
+    background: url(../img/hojas.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header"
+        "nav nav"
+        "div div"
+        "section aside"
+        "temas temas"
+        "footer footer";
+    width: 70%;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 20px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header {
+    height: 70%;
+    grid-area: header;
+
+    h1 {
+        display: inline;
+        float: left;
+        padding-left: 30px;
+        letter-spacing: 3px;
+        background-image: radial-gradient(circle at 120.71% 50%, #a2ee64 0, #87e468 25%, #6cd86c 50%, #4fcc6f 75%, #2ec172 100%);
+        color: white;
+        padding: 5px;
+    }
+
+    input {
+        float: right;
+        align-items: center;
+        margin-top: 5px;
+        margin-right: 40px;
+        padding: 10px;
+        border-radius: 10%;
+        transition: 200ms;
+    }
+
+    input:focus {
+        background-color: rgba(135, 124, 124, 0.164);
+
+
+    }
+
+}
+
+
+#sliderImgs{
+    grid-area: div;
+    width: 100%;
+  
+}
+
+.bx-wrapper,.bx-viewport{
+    height: 250px !important;
+
+ 
+}
+
+.bx-viewport{
+    margin-right: 200px;
+ 
+}
+.bx-wrapper{
+    margin-top: 20px !important;
+ 
+}
+
+nav {
+    grid-area: nav;
+    margin-top: 30px;
+
+    ul {
+        background-color: black;
+        height: 30px;
+        line-height: 30px;
+        padding: 10px;
+
+        li {
+            display: inline;
+            line-height: 30px;
+            padding: 10px;
+            transition: 200ms;
+
+
+            a {
+                color: white;
+                text-decoration: none;
+                margin-top: 10px;
+
+            }
+
+        }
+    }
+
+    li:hover {
+
+        background-color: #2ec172;
+    }
+}
+
+
+
+section {
+    grid-area: section;
+    width: 70%;
+    margin-top: 40px;
+
+    article {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+
+    }
+
+    button {
+        float: right;
+        padding: 5px;
+        background-color: #2ec172;
+        color: white;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: gray;
+    }
+
+    h5 {
+
+        margin: 10px 10px 10px 0px;
+    }
+
+}
+
+#temas{
+    grid-area: temas;
+
+    button{
+        float: left;
+        padding: 10px;
+        margin: 10px;
+     
+    }
+    #botonRED{
+        background-color: red;
+    }
+    #botonBLUE{
+        background-color: blue;
+    }
+    #botonGREEN{
+        background-color: green;
+    }
+
+    #botonSUBIR{
+        float: left;
+        background-color: black;
+        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+}
+
+aside {
+    grid-area: aside;
+    align-self: start;
+    margin-top: 50px;
+    width: 200px;
+
+    h4 {
+        text-align: center;
+        line-height: 10px;
+        background: url(../img/lines.png)repeat-x;
+    }
+
+    img {
+        margin-top: 20px;
+        width: 200px;
+    }
+
+
+    form {
+        margin-top: 30px;
+
+        label {
+            color: rgb(48, 47, 47);
+            line-height: 30px;
+        }
+        button{
+            background-color: #4fcc6f;
+            color: white;
+            padding: 6px;
+            margin-top: 5px;
+        }
+        button:hover{
+            color: gray;
+            cursor: pointer;
+        }
+    }
+
+}
+
+#reloj{
+    margin-top: 30px;
+    font-size: 20px;
+    border: 1px solid;
+    font-family: "DS-DIGI";
+
+}
+
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    
+}

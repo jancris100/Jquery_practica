@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=My+Soul&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+font-face {
+  font-family: DS-DIGI;
+  src: url("../font/ds_digital/DS-DIGI.TTF");
+  font-weight: bold;
+}
+
+html {
+  background: url(../img/hojas.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header" "nav nav" "div div" "section aside" "temas temas" "footer footer";
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+  margin-top: 20px;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+header {
+  height: 70%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+header h1 {
+  display: inline;
+  float: left;
+  padding-left: 30px;
+  letter-spacing: 3px;
+  background-image: radial-gradient(circle at 120.71% 50%, #a2ee64 0, #87e468 25%, #6cd86c 50%, #4fcc6f 75%, #2ec172 100%);
+  color: white;
+  padding: 5px;
+}
+
+header input {
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  margin-right: 40px;
+  padding: 10px;
+  border-radius: 10%;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+header input:focus {
+  background-color: rgba(135, 124, 124, 0.164);
+}
+
+#sliderImgs {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: div;
+  width: 100%;
+}
+
+.bx-wrapper, .bx-viewport {
+  height: 250px !important;
+}
+
+.bx-viewport {
+  margin-right: 200px;
+}
+
+.bx-wrapper {
+  margin-top: 20px !important;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  margin-top: 30px;
+}
+
+nav ul {
+  background-color: black;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 30px;
+  padding: 10px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+nav li:hover {
+  background-color: #2ec172;
+}
+
+section {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: section;
+  width: 70%;
+  margin-top: 40px;
+}
+
+section article {
+  margin-bottom: 20px;
+}
+
+section h1 {
+  font-size: 30px;
+}
+
+section button {
+  float: right;
+  padding: 5px;
+  background-color: #2ec172;
+  color: white;
+}
+
+section button:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+section h5 {
+  margin: 10px 10px 10px 0px;
+}
+
+#temas {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: temas;
+}
+
+#temas button {
+  float: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+#temas #botonRED {
+  background-color: red;
+}
+
+#temas #botonBLUE {
+  background-color: blue;
+}
+
+#temas #botonGREEN {
+  background-color: green;
+}
+
+#temas #botonSUBIR {
+  float: left;
+  background-color: black;
+  color: white;
+}
+
+#temas #botonSUBIR a {
+  text-decoration: none;
+  color: white;
+}
+
+aside {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: aside;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-top: 50px;
+  width: 200px;
+}
+
+aside h4 {
+  text-align: center;
+  line-height: 10px;
+  background: url(../img/lines.png) repeat-x;
+}
+
+aside img {
+  margin-top: 20px;
+  width: 200px;
+}
+
+aside form {
+  margin-top: 30px;
+}
+
+aside form label {
+  color: #302f2f;
+  line-height: 30px;
+}
+
+aside form button {
+  background-color: #4fcc6f;
+  color: white;
+  padding: 6px;
+  margin-top: 5px;
+}
+
+aside form button:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+#reloj {
+  margin-top: 30px;
+  font-size: 20px;
+  border: 1px solid;
+  font-family: "DS-DIGI";
+}
+
+footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
